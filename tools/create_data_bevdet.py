@@ -183,6 +183,7 @@ if __name__ == '__main__':
     dataset = 'nuscenes'
     version = 'v1.0'
     train_version = VERSION
+    # root_path = f'./data/{NUSCENES}'
     root_path = f'./data/{NUSCENES}'
     extra_tag = 'bevdetv2-nuscenes'
     nuscenes_data_prep(

@@ -356,7 +356,8 @@ def main(filepath='*.npz'):
     if filepath.endswith('npy'):
         y_pred = np.load(filepath)
     elif filepath.endswith('npz'):
-        y_pred = np.load(filepath)['pred']# ['semantics']
+        y_pred = np.load(filepath)['semantics']
+        # y_pred = np.load(filepath)['pred']# ['semantics']
 
     # y_pred: shape 200x200x16
     draw(

@@ -1,3 +1,11 @@
+<!--
+ * @Author: Gray g-ray@qq.com
+ * @Date: 2024-02-22 09:46:36
+ * @LastEditors: Gray g-ray@qq.com
+ * @LastEditTime: 2024-02-23 09:51:12
+ * @FilePath: /FB-BEV/docs/prepare_datasets.md
+ * @Description: 
+-->
 
 ## NuScenes
 Download nuScenes V1.0 full dataset data.
@@ -14,10 +22,9 @@ https://github.com/Tsinghua-MARS-Lab/Occ3D
 python tools/create_data_bevdet.py
 ```
 
+**ckpts**
 
-** ckpts **
-
-* Pretrained model weights*
+*Pretrained model weights*
 
 ```
 wget https://github.com/zhiqi-li/storage/releases/download/v1.0/r50_256x705_depth_pretrain.pth
