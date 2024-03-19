@@ -6,8 +6,8 @@
 
 
 # we follow the online training settings  from solofusion
-num_gpus = 16
-samples_per_gpu = 4
+num_gpus = 1
+samples_per_gpu = 1
 num_iters_per_epoch = int(28130 // (num_gpus * samples_per_gpu) * 4.554)
 num_epochs = 20
 checkpoint_epoch_interval = 1
@@ -251,9 +251,9 @@ model = dict(
 
 # Data
 dataset_type = 'NuScenesDataset'
-data_root = 'data/nuscenes/'
+data_root = '/home/ubuntu/datasets/dataset/nuscense_occ/v1.0-mini/'
 file_client_args = dict(backend='disk')
-occupancy_path = '/mount/data/occupancy_cvpr2023/gts'
+occupancy_path = '/home/ubuntu/datasets/dataset/nuscense_occ/v1.0-mini/gts'
 
 
 train_pipeline = [
@@ -331,7 +331,7 @@ test_data_config = dict(
 
 data = dict(
     samples_per_gpu=samples_per_gpu,
-    workers_per_gpu=6,
+    workers_per_gpu=1,
     test_dataloader=dict(runner_type='IterBasedRunnerEval'),
     train=dict(
         type=dataset_type,

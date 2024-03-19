@@ -8,7 +8,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description='eval occupancy')
     parser.add_argument('pred_path', help='pred_path')
-    parser.add_argument('--gt', default='/mount/data/occupancy_cvpr2023/gts', help='checkpoint file')
+    parser.add_argument('--gt', default='/home/ubuntu/datasets/dataset/nuscense_occ/Occupancy3D-nuScenes-mini/gts', help='checkpoint file')
     parser.add_argument(
         '--eval_fscore',
         action='store_true',

@@ -11,7 +11,7 @@ Train FB-OCC with 8 GPUs
 
 Eval FB-OCC with 8 GPUs
 ```
-./tools/dist_test.sh./occupancy_configs/fb_occ/fbocc-r50-cbgs_depth_16f_16x4_20e.py ./path/to/ckpts.pth 8
+./tools/dist_test.sh ./occupancy_configs/fb_occ/fbocc-r50-cbgs_depth_16f_16x4_20e.py /home/ubuntu/datasets/dataset/nuscense_occ/fbocc-r50-cbgs_depth_16f_16x4_20e.pth 4
 ```
 
 
